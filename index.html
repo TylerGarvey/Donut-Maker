@@ -4,10 +4,83 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
     <title>Donut Clicker</title>
   </head>
   <body>
-    <div class="container"></div>
-    <script src="./index.js"></script>
+    <div class="container">
+
+
+<header>
+  <nav class="nav-container">
+    <div class="expand-fred">
+     <p>Fred the Baker was a popular advertising character portrayed by actor Michael Vale in commercials for Dunkin' Donuts from 1981 to 1997. Michael Vale died on December 24, 2005 in New York City of complications from diabetes. He was 83 years old.</p>
+     <div class="expand-inspiration">
+      <p>Donut Maker draws heavily from COOKIE CLICKER!</p>
+      <a href="https://orteil.dashnet.org/cookieclicker/"></a>
+    </div>
+    <div class="expand-contact">
+      <ul class="contact-info-list">
+        <li>Tyler.Garvey614@gmail.com</li>
+       <li>937-422-7859</li>
+     </ul>
+    </div>
+    </div>
+  </nav>
+</header>
+
+<main class="main-container">
+  <section class="click-handler">
+   
+      <img src="donut.jpg" class="image">
+      <div class="donut-count"></div>
+
+  </section>
+  <div class="buttonRowContainer">
+    <div class="manualClicker">
+      <button class="donut-button" id="makeDonut">Donut Button</button>
+      <input type="text" name="donutCounter" id="donutCount" readonly></textarea>
+    </div>
+    <div class="autoclicker">
+      <button class="autoclick-butt" type="button" id="buyAutoClicker">Purchase Autoclicker</button>
+      <label>Auto Clickers:</label>
+      <input type="text" name="autoClickerCount" id="autoClickerCount" readonly></textarea>
+      <label>Auto Clicker Cost:</label>
+      <input type="text" name="autoClickerCost" id="autoClickerCost" readonly></textarea>
+    </div>
+  
+    <div class="clickmultiplier">
+      <button class="donutx-button">Donut Multiplier</button>
+    </div>
+  </div>
+
+
+    </main>
+  </div>
+  <script src="./app.js" type="module"></script>  
+  <script src="./DonutMaker.js" type="module"></script>
+
   </body>
-</html>
+</html> 
+
+
+<!-- Create a Header section
+Contains a navigation menu that when clicked will expand sections about:
+Fred the Baker Baking Company
+The inspiration for this game, Cookie Clicker
+Your contact info -->
+
+<!-- Create a Main section that contains:
+A section that handles a click
+Contains a button that can be clicked to make donuts.
+Displays the amount of Donuts made.
+
+A section that interacts with the AutoClicker
+Displays the amount of Auto Clickers purchased.
+Provides a button to purchase Auto Clickers.
+Button is disabled when you do not have enough Donuts to buy an Auto Clicker.
+
+A section that interacts with the ClickMultiplier
+ Displays the amount of Donut Multipliers purchased.
+Provides a button to purchase Donut Multiplier.
+Button is disabled when you do not have enough Donuts to buy a Donut Multiplier. -->
