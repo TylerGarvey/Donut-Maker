@@ -1,13 +1,41 @@
+body {
+    border: 2px solid green;
+}
+
+label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    white-space:nowrap;
+}
+input {
+    border: hidden;
+    font-weight: 600;
+    text-align: right;
+
+}
+
+button {
+    padding: 10px;
+    border: black solid 1px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+}
+
 .buttonRowContainer {
     display: flex;
     flex-direction: row;
     padding: 15px;
     justify-content: space-between;
 }
-
+.image-container {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 .image {
-    height: 500px;
-    width: 500px;
+    height: 350px;
+    width: 350px;
 }
 
 .nav-container {
@@ -18,4 +46,45 @@
 
 .main-container {
     border: solid red 2px;
+}
+
+.display-container  {
+    border: solid green 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: auto;
+}
+.display-container-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 150px;
+    border: 2px blue solid;
+}
+
+.display-row {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.make-donut {
+    background-color: rgb(212, 149, 85);
+
+}
+.resetButton{
+    background-color: red;
+    flex-direction: column;
+    align-content: flex-end;
+}
+
+.about-creator-content-container {
+    background-color: aliceblue;
+    width: 350px;
+    height: 200px;
+    z-index: 2;
+    display: none;
+    position: absolute;
 }

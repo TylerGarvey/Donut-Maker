@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css">
-    <title>Donut Clicker</title>
+    <title>Donut Maker</title>
   </head>
   <body>
     <div class="container">
@@ -13,44 +13,71 @@
 
 <header>
   <nav class="nav-container">
-    <div class="expand-fred">
-     <p>Fred the Baker was a popular advertising character portrayed by actor Michael Vale in commercials for Dunkin' Donuts from 1981 to 1997. Michael Vale died on December 24, 2005 in New York City of complications from diabetes. He was 83 years old.</p>
-     <div class="expand-inspiration">
-      <p>Donut Maker draws heavily from COOKIE CLICKER!</p>
-      <a href="https://orteil.dashnet.org/cookieclicker/"></a>
+    <div class="dropdown">
+      <button id="aboutGameButton">About The Game</button>
+      <div id="aboutGameModal" class="modal about-creator-content-container">
+          <p>Fred the Baker was a popular advertising character portrayed by actor Michael Vale in commercials for Dunkin' Donuts from 1981 to 1997. Michael Vale died on December 24, 2005 in New York City of complications from diabetes. He was 83 years old.</p>
+        <div class="expand-inspiration">
+          <p>Donut Maker draws heavily from 
+            <a href="https://orteil.dashnet.org/cookieclicker/" target="_blank">
+              COOKIE CLICKER!
+            </a>
+          </p>
+        </div>
+      </div>
     </div>
-    <div class="expand-contact">
-      <ul class="contact-info-list">
-        <li>Tyler.Garvey614@gmail.com</li>
-       <li>937-422-7859</li>
-     </ul>
-    </div>
+    <div class="modal">
+      <button id="aboutCreator">About the Creator</button>
+     </div>
+     
     </div>
   </nav>
 </header>
 
 <main class="main-container">
-  <section class="click-handler">
-   
-      <img src="donut.jpg" class="image">
-      <div class="donut-count"></div>
-
-  </section>
-  <div class="buttonRowContainer">
-    <div class="manualClicker">
-      <button class="donut-button" id="makeDonut">Donut Button</button>
-      <input type="text" name="donutCounter" id="donutCount" readonly></textarea>
+  <div class="image-container"> 
+    <img src="donut.jpg" class="image">
+  </div>
+  <div class="display-container">
+    <div class="display-container-col">
+      <div class="display-row">
+        <label for="input">Donut Count:</label>
+        <input type="text" name="donutCounter" id="donutCount" readonly></textarea>
+        </div>
+        <div class="display-row">
+        <label for="input">Donut Value:</label>
+        <input type="text" name="currentClickValue" id="currentClickValue" readonly></textarea>
+      </div>
+      <button class="make-donut" id="makeDonut">Make A Donut </button>
     </div>
-    <div class="autoclicker">
+    <div class="display-container-col">
+      <div class="display-row">
+        <label>Auto Clickers:     </label>
+        <input type="text" name="autoClickerCount" id="autoClickerCount" readonly></textarea>
+      </div>
+      <div class="display-row">
+        <label>Auto Clicker Cost:</label>
+        <input type="text" name="autoClickerCost" id="autoClickerCost" readonly></textarea>  
+      </div>
       <button class="autoclick-butt" type="button" id="buyAutoClicker">Purchase Autoclicker</button>
-      <label>Auto Clickers:</label>
-      <input type="text" name="autoClickerCount" id="autoClickerCount" readonly></textarea>
-      <label>Auto Clicker Cost:</label>
-      <input type="text" name="autoClickerCost" id="autoClickerCost" readonly></textarea>
+
     </div>
   
-    <div class="clickmultiplier">
-      <button class="donutx-button">Donut Multiplier</button>
+    <div class="display-container-col">
+      <div class="display-row">
+        <label>Multiplier:</label>
+        <input type="text" name="autoClickerCount" id="multiplierCount" readonly></textarea>  
+      </div>
+      <div class="display-row">
+        <label> Multiplier Cost:</label>
+        <input type="text" name="autoClickerCost" id="multiplierCost" readonly></textarea>
+      </div>
+      <button class="donutx-button" type="button" id="buyDonutMultiplier">Donut Multiplier</button>
+
+    </div>
+
+    <div class="display-container-col">
+      <button class="resetButton" type="button" id="resetButton">RESET</button>
     </div>
   </div>
 
@@ -64,23 +91,3 @@
 </html> 
 
 
-<!-- Create a Header section
-Contains a navigation menu that when clicked will expand sections about:
-Fred the Baker Baking Company
-The inspiration for this game, Cookie Clicker
-Your contact info -->
-
-<!-- Create a Main section that contains:
-A section that handles a click
-Contains a button that can be clicked to make donuts.
-Displays the amount of Donuts made.
-
-A section that interacts with the AutoClicker
-Displays the amount of Auto Clickers purchased.
-Provides a button to purchase Auto Clickers.
-Button is disabled when you do not have enough Donuts to buy an Auto Clicker.
-
-A section that interacts with the ClickMultiplier
- Displays the amount of Donut Multipliers purchased.
-Provides a button to purchase Donut Multiplier.
-Button is disabled when you do not have enough Donuts to buy a Donut Multiplier. -->
