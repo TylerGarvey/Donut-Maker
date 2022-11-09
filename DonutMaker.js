@@ -48,8 +48,10 @@ export default class DonutMaker {
       this.autoClickerCount++;
       this.donutCount -= this.autoClickerCost;
       this.adjustAutoClickerCost();
-    } else if (this.donutCount < this.autoClickerCost) {
+    } else if(this.donutCount <= this.autoClickerCost) {
       console.log("NOT ENOUGH DONUTS!")
+    } else {
+      
     }
   }
 

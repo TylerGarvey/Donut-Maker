@@ -1,7 +1,6 @@
 body {
-    border: 2px solid green;
+    background-color: chartreuse;
 }
-
 label {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bolder;
@@ -11,14 +10,17 @@ input {
     border: hidden;
     font-weight: 600;
     text-align: right;
-
 }
 
 button {
-    padding: 10px;
-    border: black solid 1px;
+    padding: 5px, 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 900;
+    background-color: bisque;
+}
+
+a {
+    text-decoration: none;
 }
 
 .buttonRowContainer {
@@ -28,11 +30,11 @@ button {
     justify-content: space-between;
 }
 .image-container {
-    border: 1px solid black;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
+
 .image {
     height: 350px;
     width: 350px;
@@ -41,34 +43,32 @@ button {
 .nav-container {
     display: flex;
     flex-direction: row;
-    border: solid black 3px
+    justify-content: space-between;
+    padding: 5px;
 }
 
 .main-container {
-    border: solid red 2px;
+    padding: 10px 0 10px 0;
 }
 
 .display-container  {
-    border: solid green 1px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     width: auto;
+    padding-top: 20px;
 }
 .display-container-col {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 150px;
-    border: 2px blue solid;
 }
 
 .display-row {
     display: flex;
     flex-direction: row;
 }
-
-
 
 .make-donut {
     background-color: rgb(212, 149, 85);
@@ -77,14 +77,42 @@ button {
 .resetButton{
     background-color: red;
     flex-direction: column;
-    align-content: flex-end;
+    margin-top: 128px;
 }
 
-.about-creator-content-container {
-    background-color: aliceblue;
-    width: 350px;
+.about-game-content-container {
+    background-color: linen;
+    max-width: 24ch;
+  word-wrap:break-word;
+    width: 200px;
     height: 200px;
     z-index: 2;
     display: none;
     position: absolute;
+}
+
+.about-creator-content-container {
+    background-color: aliceblue;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: none;
+    position: relative;
+}
+
+.linkedIn {
+    height: 20px;
+}
+.gitHub {
+    background-color: blue;
+    height: 20px;
+}
+
+.portfolio {
+    height: 20px;
+}
+.expand-creator {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }

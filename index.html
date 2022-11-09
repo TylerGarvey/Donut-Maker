@@ -15,7 +15,7 @@
   <nav class="nav-container">
     <div class="dropdown">
       <button id="aboutGameButton">About The Game</button>
-      <div id="aboutGameModal" class="modal about-creator-content-container">
+      <div id="aboutGameModal" class="modal about-game-content-container">
           <p>Fred the Baker was a popular advertising character portrayed by actor Michael Vale in commercials for Dunkin' Donuts from 1981 to 1997. Michael Vale died on December 24, 2005 in New York City of complications from diabetes. He was 83 years old.</p>
         <div class="expand-inspiration">
           <p>Donut Maker draws heavily from 
@@ -27,9 +27,20 @@
       </div>
     </div>
     <div class="modal">
-      <button id="aboutCreator">About the Creator</button>
+      <button id="aboutCreatorButton">About the Creator</button>
+      <div class="modal-background">
+        <div id="aboutCreatorModal" class="modal about-creator-content-container">
+          <p>Tyler Garvey</p>
+          <div class="expand-creator">
+            <p>EMAIL:Tyler.Garvey614@gmail.com</p>
+            <a href="https://tylergarvey.github.io/"><img src="portfolio.png" alt="portfolio" class="portfolio"> Portfolio</a>
+            <a href="https://www.linkedin.com/in/tygarvey/"><img src="LI-Logo.png" alt="linkedIn" class="linkedIn"></a><br>
+            <a href="https://github.com/TylerGarvey"><img src="GitHub.png" alt="gitHub" class="gitHub"></a>
+          </div>
+        </div> 
+      </div>
+             
      </div>
-     
     </div>
   </nav>
 </header>
@@ -39,6 +50,18 @@
     <img src="donut.jpg" class="image">
   </div>
   <div class="display-container">
+   
+    <div class="display-container-col">
+      <div class="display-row">
+        <label>Auto Clickers:     </label>
+        <input type="text" name="autoClickerCount" id="autoClickerCount" readonly></textarea>
+      </div>
+      <div class="display-row">
+        <label>Auto Clicker Cost:</label>
+        <input type="text" name="autoClickerCost" id="autoClickerCost" readonly></textarea>  
+      </div>
+      <button class="autoclick-butt" type="button" id="buyAutoClicker">Purchase Autoclicker</button>
+    </div>
     <div class="display-container-col">
       <div class="display-row">
         <label for="input">Donut Count:</label>
@@ -50,19 +73,6 @@
       </div>
       <button class="make-donut" id="makeDonut">Make A Donut </button>
     </div>
-    <div class="display-container-col">
-      <div class="display-row">
-        <label>Auto Clickers:     </label>
-        <input type="text" name="autoClickerCount" id="autoClickerCount" readonly></textarea>
-      </div>
-      <div class="display-row">
-        <label>Auto Clicker Cost:</label>
-        <input type="text" name="autoClickerCost" id="autoClickerCost" readonly></textarea>  
-      </div>
-      <button class="autoclick-butt" type="button" id="buyAutoClicker">Purchase Autoclicker</button>
-
-    </div>
-  
     <div class="display-container-col">
       <div class="display-row">
         <label>Multiplier:</label>
