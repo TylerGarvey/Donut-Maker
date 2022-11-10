@@ -22,6 +22,18 @@ function showDisplay() {
   MultiplierCount.value = dm.getDonutMultiplierCount();
   MultiplierCost.value = dm.getDonutMultiplierCost();
   CurrentClickValue.value = dm.getClickValue();
+  if(dm.getDonutCount() >= dm.getAutoClickerCost()){
+    BuyAutoClicker.removeAttribute("disabled")
+  }
+  else {
+    BuyAutoClicker.setAttribute("disabled","disabled")
+  }
+  if(dm.getDonutCount() >= dm.getDonutMultiplierCost()){
+    BuyDonutMultiplier.removeAttribute("disabled")
+  }
+  else {
+    BuyDonutMultiplier.setAttribute("disabled","disabled")
+  }
 };
 
 function setButton() {
